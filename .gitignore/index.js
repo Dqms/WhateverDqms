@@ -17,7 +17,7 @@ bot.on('message', message => {
     }
 
     if (message.content === "Salut"){
-        message.reply("Bonne Journée.");
+        message.reply("Bonjour.");
         console.log("Commande Salut effectuée");
     }
 });
