@@ -21,8 +21,3 @@ bot.on('message', message => {
         console.log("Commande Salut effectuée");
     }
 });
-
-     
-
-
-
