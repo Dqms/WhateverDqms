@@ -14,12 +14,6 @@ bot.on('guildMemberAdd', member => {
     member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member.user.username} qui vient de rejoindre le discord.`)
 })
 
-client.on('message', msg => {
-    if (msg.content === '!dqms') {
-      msg.reply('!ftn xd Dqms');
-    }
-  });
-
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes \n *help");
