@@ -24,8 +24,9 @@ bot.on('message', message => {
         console.log("Commande Salut effectuée");
     }
     
-    if (message.content === "!dqms"){
-        message.reply("!ftn xd Dqms.");
-        console.log("Commande ftn Dqms");
-    }
+    
+    bot.on('message', function (message) {
+    if (message.content === '!Dqms') {
+        message.channel.send('!ftn Dqms')
+    } 
 });
