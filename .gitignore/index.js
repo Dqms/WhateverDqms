@@ -10,6 +10,12 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
+ bot.on('message', function (message) {
+    if (message.content === '!Dqms') {
+        message.channel.send('!ftn Dqms')
+    }
+});
+
 bot.on('guildMemberAdd', member => {
     member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member.user.username} qui vient de rejoindre le discord.`)
 })
@@ -23,10 +29,4 @@ bot.on('message', message => {
         message.reply("Bien le bonjour.");
         console.log("Commande Salut effectuée");
     }
-    
-    
-    bot.on('message', function (message) {
-    if (message.content === '!Dqms') {
-        message.channel.send('!ftn Dqms')
-    } 
 });
