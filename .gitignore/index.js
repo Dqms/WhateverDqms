@@ -10,15 +10,15 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
- bot.on('message', function (message) {
-    if (message.content === '!Dqms') {
-        message.channel.send('!ftn Dqms')
-    }
-});
-
 bot.on('guildMemberAdd', member => {
     member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member.user.username} qui vient de rejoindre le discord.`)
 })
+
+client.on('message', msg => {
+    if (msg.content === '!dqms') {
+      msg.reply('!ftn xd Dqms');
+    }
+  });
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
@@ -28,5 +28,10 @@ bot.on('message', message => {
     if (message.content === "Salut"){
         message.reply("Bien le bonjour.");
         console.log("Commande Salut effectuée");
+    }
+    
+    if (message.content === "!dqms"){
+        message.reply("!ftn xd Dqms.");
+        console.log("Commande ftn Dqms");
     }
 });
