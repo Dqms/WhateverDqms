@@ -12,7 +12,7 @@ bot.on('ready', function() {
 
 bot.login("NDYwNDU2Mzc3NDA0NDg5NzM4.DhFRMw.01K1YaKD6Y2o7Yr2e3n2vMu_arU");
 
-bot.on("guildMemberAdd", member -> {
+bot.on("guildMemberAdd", member => {
     member.guild.channels.find("name", "bienvenue").send(' ${member.user.username} vien de rejoindre le discord.')
 })
 
