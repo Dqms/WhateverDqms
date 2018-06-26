@@ -20,7 +20,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "dqms"){
-        message.channel.sendMessage("!ftn Dqms");
+        message.channel.sendMessage("!ftn xd Dqms");
     }
     
     if (message.content === prefix + "youtube"){
