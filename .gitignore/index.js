@@ -16,9 +16,9 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        var help_embed = new Discord.RichEmbed();
-            .setColor('#005DFD');
-            .addField("WhatEver Commands list :", "(use the prefix : *) \n \n **Dqms** - *Get the Dqms's stats (#spambotfortnite)* \n **Youtube** - *Get the Dqms's Youtube channel* \n **Info** - *Get the bot infos*");
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#005DFD')
+            .addField("WhatEver Commands list :", "(use the prefix : *) \n \n **Dqms** - *Get the Dqms's stats (#spambotfortnite)* \n **Youtube** - *Get the Dqms's Youtube channel* \n **Info** - *Get the bot infos*")
         message.channel.sendEmbed(help_embed);
     }
 
