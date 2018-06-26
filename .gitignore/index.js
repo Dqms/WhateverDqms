@@ -6,7 +6,7 @@ var prefix = ("*")
 bot.login(process.env.TOKEN);
 
 bot.on('ready', function() {
-    bot.user.setGame("Command: *help")
+    bot.user.setGame("Developed by Dqms#5186")
     console.log("Connected");
 });
 
@@ -16,7 +16,17 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes \n *help");
+        message.channel.sendMessage("Liste des commandes : \n *help \n *dqms \n *youtube");
+    }
+
+bot.on('message', message => {
+    if (message.content === prefix + "dqms"){
+        message.channel.sendMessage("!ftn Dqms");
+    }
+    
+ bot.on('message', message => {
+    if (message.content === prefix + "youtube"){
+        message.channel.sendMessage("https://bit.ly/2ttEetU");
     }
 
     if (message.content === "Salut"){
