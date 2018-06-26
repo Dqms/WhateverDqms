@@ -31,7 +31,7 @@ bot.on('message', message => {
         message.channel.sendMessage("WhatEver Bot Infos : \n \n **Code** : Node \n **Developed by** : Dqms#5186  \n **Version** : Beta");
     }
 
-    if (message.content === prefix + "info"){
+    if (message.content === prefix + "idk"){
         message.channel.sendMessage("WhatEver Bot Infos : \n \n **Code** : Node \n **Developed by** : Dqms#5186  \n **Version** : Beta");
     }
 
