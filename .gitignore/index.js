@@ -19,12 +19,10 @@ bot.on('message', message => {
         message.channel.sendMessage("Liste des commandes : \n *help \n *dqms \n *youtube");
     }
 
-bot.on('message', message => {
     if (message.content === prefix + "dqms"){
         message.channel.sendMessage("!ftn Dqms");
     }
     
- bot.on('message', message => {
     if (message.content === prefix + "youtube"){
         message.channel.sendMessage("https://bit.ly/2ttEetU");
     }
