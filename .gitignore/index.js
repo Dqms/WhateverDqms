@@ -16,7 +16,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("WhatEver Commands list : \n \n **Dqms** - *Get the Dqms's stats (#spambotfortnite)* \n **Youtube** - *Get the Dqms's Youtube channel*");
+        message.channel.sendMessage("WhatEver Commands list : \n (use the prefix : *) \n \n **Dqms** - *Get the Dqms's stats (#spambotfortnite)* \n **Youtube** - *Get the Dqms's Youtube channel* \n **Info** - *Get the bot infos*");
     }
 
     if (message.content === prefix + "dqms"){
@@ -24,11 +24,15 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "youtube"){
-        message.channel.sendMessage("https://bit.ly/2ttEetU");
+        message.channel.sendMessage("Dqms's Youtube channel : https://bit.ly/2ttEetU");
     }
     
     if (message.content === prefix + "info"){
-        message.channel.sendMessage("WhatEver Bot Infos : \n \n **Code** : *Node.js* \n **Developed by** : *Dqms#5186*  \n **Version** : *Beta*");
+        message.channel.sendMessage("WhatEver Bot Infos : \n \n **Code** : Node \n **Developed by** : Dqms#5186  \n **Version** : Beta");
+    }
+
+    if (message.content === prefix + "info"){
+        message.channel.sendMessage("WhatEver Bot Infos : \n \n **Code** : Node \n **Developed by** : Dqms#5186  \n **Version** : Beta");
     }
 
     if (message.content === "Salut"){
