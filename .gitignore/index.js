@@ -16,7 +16,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Commands list : \n **dqms** - *Get the Dqms's stats (#spambotfortnite)* \n **youtube** - *Get the Dqms's Youtube channel*");
+        message.channel.sendMessage("Commands list : \n \n **Dqms** - *Get the Dqms's stats (#spambotfortnite)* \n **Youtube** - *Get the Dqms's Youtube channel*");
     }
 
     if (message.content === prefix + "dqms"){
