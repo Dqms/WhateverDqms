@@ -52,6 +52,6 @@ bot.on('message', message => {
     }
 
     if (message.content === "Salut"){
-        message.reply.channels.find("name", "game-list").send(` Salut à toi :) `)
-    })
+        member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member.user.username} qui vient de rejoindre le discord.`)
+    }
 });
