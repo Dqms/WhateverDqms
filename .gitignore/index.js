@@ -52,6 +52,6 @@ bot.on('message', message => {
     }
 
     if (message.content === "Salut"){
-        message.channels.find("name", "game-list").send("Salut à toi :)")
+        message.reply.channels.find("name", "game-list").send(` Salut à toi :) `)
     })
 });
