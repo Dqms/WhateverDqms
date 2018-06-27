@@ -18,7 +18,7 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Commands list :", " \n*Dqms - **Get the Dqms's stats (#spambotfortnite)** \n *Youtube - **Get the Dqms's Youtube channel** \n *Twitch - **Get the Dqms's Twitch channel** \n *Info - **Get the bot infos** \n *Invite - **Get the link to invite someone**")
+            .addField("WhatEver Commands list :", " \n  *Dqms - **Get the Dqms's stats (#spambotfortnite)** \n *Youtube - **Get the Dqms's Youtube channel** \n *Twitch - **Get the Dqms's Twitch channel** \n *Info - **Get the bot infos** \n *Invite - **Get the link to invite someone**")
         message.channel.sendEmbed(help_embed);
     }
 
@@ -33,20 +33,26 @@ bot.on('message', message => {
     if (message.content === prefix + "info"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Bot Info :", " \nCode : **Node** \n Developed by : **Dqms#5186**  \n Version : **Beta**")
+            .addField("WhatEver Bot Info :", " \n  Code : **Node** \n Developed by : **Dqms#5186**  \n Version : **Beta**")
         message.channel.sendEmbed(info_embed);
     }
 
     if (message.content === prefix + "invite"){
-        message.channel.sendMessage("If you want to invite someone : https://discord.gg/kQ6aV3A");
+        var info_embed = new Discord.RichEmbed()
+            .setColor('#8678b5')
+            .addField("WhatEver Invite :", "\n If you want to invite someone : https://discord.gg/kQ6aV3A")
+        message.channel.sendEmbed(info_embed);
     }
 
-    if (message.content === prefix + "twitch"){
-        message.channel.sendMessage("Dqms's Twitch channel : https://www.twitch.tv/therealdqms ");
+    if (message.content === prefix + "Twitch"){
+        var info_embed = new Discord.RichEmbed()
+            .setColor('#8678b5')
+            .addField("WhatEver Twitch :", "\n Dqms's Twitch channel : https://www.twitch.tv/therealdqms ")
+        message.channel.sendEmbed(info_embed);
     }
 
     if (message.content === "Salut"){
-        message.reply("Bien le bonjour.");
+        message.reply("Salut à toi :)");
         console.log("Commande Salut effectuée");
     }
 });
