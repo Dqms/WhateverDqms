@@ -44,7 +44,7 @@ bot.on('message', message => {
         message.channel.sendEmbed(info_embed);
     }
 
-    if (message.content === prefix + "twitch"){
+    if (message.content === prefix + "Twitch"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
             .addField("WhatEver Twitch :", "\n Dqms's Twitch channel : https://www.twitch.tv/therealdqms ")
@@ -52,7 +52,7 @@ bot.on('message', message => {
     }
 
     if (message.content === "Salut"){
-        message.reply("Salut à toi :)");
+        message.channels.find("name", "game-list").send("Salut à toi :)");
         console.log("Commande Salut effectuée");
     }
 });
