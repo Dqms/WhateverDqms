@@ -52,7 +52,6 @@ bot.on('message', message => {
     }
 
     if (message.content === "Salut"){
-        message.channels.find("name", "game-list").send("Salut à toi :)");
-        console.log("Commande Salut effectuée");
-    }
+        message.channels.find("name", "game-list").send("Salut à toi :)")
+    })
 });
