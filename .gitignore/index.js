@@ -53,5 +53,5 @@ bot.on('message', message => {
 
     if (message.content === "Salut"){
         member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member.user.username} qui vient de rejoindre le discord.`)
-    }
+    })
 });
