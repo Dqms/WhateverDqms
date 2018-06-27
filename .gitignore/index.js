@@ -18,7 +18,7 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Commands list :", " \n  *Dqms - **Get the Dqms's stats (#spambotfortnite)** \n *Youtube - **Get the Dqms's Youtube channel** \n *Twitch - **Get the Dqms's Twitch channel** \n *Info - **Get the bot infos** \n *Invite - **Get the link to invite someone**")
+            .addField("WhatEver Commands list :", " \n  *Dqms - **Get the Dqms's stats (#spambotfortnite)** \n*Youtube - **Get the Dqms's Youtube channel** \n*Twitch - **Get the Dqms's Twitch channel** \n*Invite - **Get the link to invite someone** \n*Info - **Get the bot infos**")
         message.channel.sendEmbed(help_embed);
     }
 
@@ -27,13 +27,16 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "youtube"){
-        message.channel.sendMessage("Dqms's Youtube channel : https://bit.ly/2ttEetU");
+        var info_embed = new Discord.RichEmbed()
+            .setColor('#8678b5')
+            .addField("WhatEver Youtube :", " \n  Dqms's Youtube channel : <https://bit.ly/2ttEetU>")
+        message.channel.sendEmbed(info_embed);
     }
     
     if (message.content === prefix + "info"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Bot Info :", " \n  Code : **Node** \n Developed by : **Dqms#5186**  \n Version : **Beta**")
+            .addField("WhatEver Bot Info :", " \n  Code : **Node** \nDeveloped by : **Dqms#5186**  \nVersion : **Beta**")
         message.channel.sendEmbed(info_embed);
     }
 
