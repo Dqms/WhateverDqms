@@ -31,7 +31,10 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "info"){
-        message.channel.sendMessage("WhatEver Bot Infos : \n \n **Code** : Node \n **Developed by** : Dqms#5186  \n **Version** : Beta");
+        var info_embed = new Discord.RichEmbed()
+            .setColor('#8678b5')
+            .addField("WhatEver Bot Info :", " \n Code : **Node** \n Developed by : **Dqms#5186**  \n Version : **Beta**")
+        message.channel.sendEmbed(info_embed);
     }
 
     if (message.content === prefix + "invite"){
