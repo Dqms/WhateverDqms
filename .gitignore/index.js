@@ -55,14 +55,4 @@ bot.on('message', message => {
         message.reply("Salut à toi :)");
         console.log("Commande Salut effectuée");
     }
-
-bot.on('message', function(user, userID, channelID, message, rawEvent) {
-        if (message === "!start") { // command to trigger
-          var interval = setInterval (function (){
-            bot.sendMessage({
-              to: today_shop,
-              message: "!fnbr shop" // message to send
-            });
-          }, 10000); // time between each interval in milliseconds
-        }
-    });
+});
