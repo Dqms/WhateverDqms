@@ -44,7 +44,7 @@ bot.on('message', message => {
         message.channel.sendEmbed(info_embed);
     }
 
-    if (message.content === prefix + "Twitch"){
+    if (message.content === prefix + "twitch"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
             .addField("WhatEver Twitch :", "\n Dqms's Twitch channel : https://www.twitch.tv/therealdqms ")
