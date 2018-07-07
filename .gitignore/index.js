@@ -45,7 +45,7 @@ bot.on('message', message => {
     if (message.content === prefix + "invite"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Invite :", "\n If you want to invite someone : https://discord.gg/kQ6aV3A")
+            .addField("WhatEver Invite :", "\n If you want to invite someone : https://discord.gg/rnnhvXV")
         message.channel.sendEmbed(info_embed);
     }
 
