@@ -25,7 +25,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "dqms"){
-        message.channel.sendMessage("!ftn xd FromHumanToDqms");
+        message.channel.sendMessage("!ftn FromHumanToDqms");
     }
     
     if (message.content === prefix + "youtube"){
