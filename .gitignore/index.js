@@ -38,7 +38,7 @@ bot.on('message', message => {
     if (message.content === prefix + "info"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Bot Info :", " \n  Code : **Node** \nDeveloped by : **Dqms#5186**  \nVersion : **Beta**")
+            .addField("WhatEver Bot Info :", " \n  Code : **Node** \nDeveloped by : **Dqms#5186**  \nVersion : **1.1**")
         message.channel.sendEmbed(info_embed);
     }
 
