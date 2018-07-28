@@ -25,7 +25,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "dqms"){
-        message.channel.sendMessage("!ftn FromHumanToDqms");
+        message.channel.sendMessage("!fm FromHumanToDqms");
     }
     
     if (message.content === prefix + "youtube"){
@@ -45,7 +45,7 @@ bot.on('message', message => {
     if (message.content === prefix + "invite"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Invite :", "\n If you want to invite someone : https://discord.gg/EW3vf76")
+            .addField("WhatEver Invite :", "\n If you want to invite someone : https://discord.gg/xaFKSUh")
         message.channel.sendEmbed(info_embed);
     }
 
