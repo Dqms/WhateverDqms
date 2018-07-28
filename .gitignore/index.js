@@ -20,7 +20,7 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Commands list :", " \n  *Dqms - **Get the Dqms's stats (#spambotfortnite)** \n*Youtube - **Get the Dqms's Youtube channel** \n*Twitch - **Get the Dqms's Twitch channel** \n*Invite - **Get the link to invite someone** \n*Info - **Get the bot infos**")
+            .addField("WhatEver Commands list :", " \n  *Dqms - **Get the Dqms's stats (#commands-fortnite)** \n*Youtube - **Get the Dqms's Youtube channel** \n*Twitch - **Get the Dqms's Twitch channel** \n*Invite - **Get the link to invite someone** \n*Info - **Get the bot infos**")
         message.channel.sendEmbed(help_embed);
     }
 
