@@ -20,7 +20,7 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Commands list :", " \n  *Dqms - **Get the Dqms's stats (#commands-fortnite)** \n*Youtube - **Get the Dqms's Youtube channel** \n*Twitch - **Get the Dqms's Twitch channel** \n*Invite - **Get the link to invite someone** \n*Info - **Get the bot infos**")
+            .addField("WhatEver Commands list :", " \n  *Dqms - **Voir les stats de Dqms (Uniquement dans le channel #commands-fortnite)** \n*Youtube - **Voir la chaîne Youtube de Dqms** \n*Twitch - **Voir la chaîne Twitch de Dqms** \n*Invite - **Avoir le lien d'invitation officiel** \n*Info - **Get the bot infos**")
         message.channel.sendEmbed(help_embed);
     }
 
@@ -31,28 +31,28 @@ bot.on('message', message => {
     if (message.content === prefix + "youtube"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Youtube :", " \n  Dqms's Youtube channel : <https://bit.ly/2ttEetU>")
+            .addField("WhatEver Youtube :", " \n  Chaîne Youtube de Dqms : <https://bit.ly/2ttEetU>")
         message.channel.sendEmbed(info_embed);
     }
     
     if (message.content === prefix + "info"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Bot Info :", " \n  Code : **Node** \nDeveloped by : **Dqms#5186**  \nVersion : **1.1**")
+            .addField("WhatEver Bot Info :", " \n  Code : **Node** \nDéveloppé : **Dqms#5186**  \nVersion : **1.1**")
         message.channel.sendEmbed(info_embed);
     }
 
     if (message.content === prefix + "invite"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Invite :", "\n If you want to invite someone : https://discord.gg/xaFKSUh")
+            .addField("WhatEver Invite :", "\n Lien d'invitation officiel : https://discord.gg/xaFKSUh")
         message.channel.sendEmbed(info_embed);
     }
 
     if (message.content === prefix + "twitch"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Twitch :", "\n Dqms's Twitch channel : https://www.twitch.tv/dqmsofficial ")
+            .addField("WhatEver Twitch :", "\n Chaîne Twitch de Dqms : https://www.twitch.tv/dqmsofficial ")
         message.channel.sendEmbed(info_embed);
     }
 
