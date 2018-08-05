@@ -17,7 +17,7 @@ bot.on('guildMemberAdd', member => {
     }
     else{
     member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member} qui vient de rejoindre le discord.`)
-    member.addRole(role)
+    member.addRole(role);
         
     }
 })
