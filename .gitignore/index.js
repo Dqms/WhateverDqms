@@ -12,7 +12,7 @@ bot.on('ready', function() {
 
 bot.on('guildMemberAdd', member => {
     let role = member.guild.roles.find("name", "Membres")
-    if (member.user.name.substr(0, 10) == "discord.gg"){
+    if (member.user.name.substr(0, 10) == "discord.gg/Er6Qhn add me"){
         member.kick("change de nom.");
     }
     else{
