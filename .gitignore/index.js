@@ -11,7 +11,7 @@ bot.on('ready', function() {
 });
 
 bot.on('guildMemberAdd', member => {
-    let role = member.guild.roles.find("name", "Membres")
+    let role = member.guild.roles.find("name", "Invités")
     member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member} qui vient de rejoindre le discord !:tada: N'oublie pas de lire les #regles et #roles  :innocent: .`)
     member.addRole(role)
 })
