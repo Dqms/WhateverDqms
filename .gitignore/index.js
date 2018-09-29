@@ -23,7 +23,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "dqms"){
-        message.channel.sendMessage("!fm FromHumanToDqms");
+        message.channel.sendMessage("!fm FortniteIsTrashㅤ");
     }
     
     if (message.content === prefix + "youtube"){
@@ -43,7 +43,7 @@ bot.on('message', message => {
     if (message.content === prefix + "invite"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Invite :", "\n Lien d'invitation officiel : https://discord.gg/xaFKSUh")
+            .addField("WhatEver Invite :", "\n Lien d'invitation officiel : https://discord.gg/QqCYD9W")
         message.channel.sendEmbed(info_embed);
     }
 
