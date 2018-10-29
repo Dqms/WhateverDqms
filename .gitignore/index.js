@@ -23,7 +23,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "dqms"){
-        message.channel.sendMessage("!fm FortniteIsTrashㅤ");
+        message.channel.sendMessage("!fm xd Dqms");
     }
     
     if (message.content === prefix + "youtube"){
@@ -36,7 +36,7 @@ bot.on('message', message => {
     if (message.content === prefix + "info"){
         var info_embed = new Discord.RichEmbed()
             .setColor('#8678b5')
-            .addField("WhatEver Bot Info :", " \n  Code : **Node** \nDéveloppé : **Dqms#5186**  \nVersion : **1.1**")
+            .addField("WhatEver Bot Info :", " \n  Code : **Node** \nDéveloppé : **Dqms#5740**  \nVersion : **1.1**")
         message.channel.sendEmbed(info_embed);
     }
 
