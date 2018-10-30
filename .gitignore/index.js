@@ -11,7 +11,7 @@ bot.on('ready', function() {
 });
 
 bot.on('guildMemberAdd', member => {
-    member.guild.channels.find("name", "bienvenue").send(` Bienvenue à ${member} qui vient de rejoindre le discord !:tada: N'oublie pas de lire les #regles et #roles  :innocent: .`)
+    member.guild.channels.find("name", "✋bienvenue").send(` Bienvenue à ${member} qui vient de rejoindre le discord !:tada: N'oublie pas de lire les #regles et #roles  :innocent: .`)
 })
 
 bot.on('message', message => {
